@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>parse</title>
+  <link rel="stylesheet" type="text/css" href="github-markdown-dark.css">
+  <script src="marked.min.js"></script>
+  <style>
+    .markdown-body {
+      box-sizing: border-box;
+      min-width: 200px;
+      max-width: 980px;
+      margin: 0 auto;
+      padding: 45px;
+    }
+
+    @media (max-width: 767px) {
+      .markdown-body {
+        padding: 15px;
+      }
+    }
+    body {
+      background-color: #0d1117;
+    }
+  </style>
+</head>
+<body>
+  <input type="text" id="url-input">
+  <div id="markdown-content" class="markdown-body"></div>
+
+  <script>
+    const fetchMarkdown = async (url) => {
+      try {
+        const response = await fetch(url);
+        const markdown = await response.text();
+        const html = marked(markdown);
+        const markdownEl = document.querySelector('#markdown-content');
+        markdownEl.innerHTML = html;
+      } catch (error) {
+        console.error('Error loading markdown file:', error);
+      }
+    }
+
+    const urlInput = document.querySelector('#url-input');
+    urlInput.addEventListener('input', (event) => {
+      const newUrl = event.target.value;
+      fetchMarkdown(newUrl);
+    });
+
+    const urlParams = new URLSearchParams(window.location.search);
+    const markdownUrl = urlParams.get('url');
+    if (markdownUrl) {
+      fetchMarkdown(markdownUrl);
+      urlInput.value = markdownUrl;
+    }
+  </script>
+</body>
+</html>
