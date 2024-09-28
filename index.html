@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>parse</title>
-  <link rel="stylesheet" type="text/css" href="../assets/github-markdown-dark.css">
+  <link rel="stylesheet" type="text/css" href="../assets/github-markdown.css">
   <script src="../assets/marked.min.js"></script>
   <script src="../assets/auto-render.min.js"></script>
   <link rel="stylesheet" href="../assets/katex.min.css">
@@ -34,6 +34,7 @@
 
   <script>
     document.addEventListener("DOMContentLoaded", function() {
+      // Initialize KaTeX rendering
       renderMathInElement(document.body, {
         delimiters: [
           { left: "$$", right: "$$", display: true },
@@ -51,7 +52,8 @@
           const html = marked(markdown);
           const markdownEl = document.querySelector('#markdown-content');
           markdownEl.innerHTML = html;
-          // Render KaTeX expressions in the new content
+
+          // Re-render KaTeX expressions in the new content
           renderMathInElement(markdownEl, {
             delimiters: [
               { left: "$$", right: "$$", display: true },
@@ -71,6 +73,7 @@
         }
       });
 
+      // Load URL parameter if available
       const urlParams = new URLSearchParams(window.location.search);
       const markdownUrl = urlParams.get('url');
       if (markdownUrl) {
