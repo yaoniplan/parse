@@ -13,16 +13,16 @@ The best time to plant a tree was 20 years ago. The second best time is <span st
 ## 💻Projects
 <a href="https://github.com/yaoniplan/note">
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats.vercel.app/api/pin/?username=yaoniplan&repo=note&theme=dark&border_color=3c4043">
-  <source media="(prefers-color-scheme: light)" srcset="https://github-readme-stats.vercel.app/api/pin/?username=yaoniplan&repo=note&theme=default">
-  <img alt="Repo-card" src="https://github-readme-stats.vercel.app/api/pin/?username=yaoniplan&repo=note&theme=default">
+  <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats-fast.vercel.app/api/pin/?username=yaoniplan&repo=note&theme=dark&border_color=3c4043">
+  <source media="(prefers-color-scheme: light)" srcset="https://github-readme-stats-fast.vercel.app/api/pin/?username=yaoniplan&repo=note&theme=default">
+  <img alt="Repo-card" src="https://github-readme-stats-fast.vercel.app/api/pin/?username=yaoniplan&repo=note&theme=default">
 </picture>
 </a>
 <a href="https://github.com/yaoniplan/dotfiles">
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats.vercel.app/api/pin/?username=yaoniplan&repo=dotfiles&theme=dark&border_color=3c4043">
-  <source media="(prefers-color-scheme: light)" srcset="https://github-readme-stats.vercel.app/api/pin/?username=yaoniplan&repo=dotfiles&theme=default">
-  <img alt="Repo-card" src="https://github-readme-stats.vercel.app/api/pin/?username=yaoniplan&repo=dotfiles&theme=default">
+  <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats-fast.vercel.app/api/pin/?username=yaoniplan&repo=dotfiles&theme=dark&border_color=3c4043">
+  <source media="(prefers-color-scheme: light)" srcset="https://github-readme-stats-fast.vercel.app/api/pin/?username=yaoniplan&repo=dotfiles&theme=default">
+  <img alt="Repo-card" src="https://github-readme-stats-fast.vercel.app/api/pin/?username=yaoniplan&repo=dotfiles&theme=default">
 </picture>
 </a>
 
