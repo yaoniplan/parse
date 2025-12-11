@@ -25,6 +25,13 @@ The best time to plant a tree was 20 years ago. The second best time is <span st
   <img alt="Repo-card" src="https://github-readme-stats-fast.vercel.app/api/pin/?username=yaoniplan&repo=dotfiles&theme=default">
 </picture>
 </a>
+<a href="https://github.com/yaoniplan/parse">
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats-fast.vercel.app/api/pin/?username=yaoniplan&repo=parse&theme=dark&border_color=3c4043">
+  <source media="(prefers-color-scheme: light)" srcset="https://github-readme-stats-fast.vercel.app/api/pin/?username=yaoniplan&repo=parse&theme=default">
+  <img alt="Repo-card" src="https://github-readme-stats-fast.vercel.app/api/pin/?username=yaoniplan&repo=parse&theme=default">
+</picture>
+</a>
 
 ## ⚡Skills
 <picture>
