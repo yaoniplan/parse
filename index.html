@@ -26,21 +26,9 @@
     body {
       background-color: #0d1117;
     }
-    #url-input {
-      display: block;
-      margin: 16px auto; /* Center input box */
-      width: 50%; /* Adjust width as needed */
-      padding: 12px;
-      border: 1px solid #444; /* Darker border for dark mode */
-      border-radius: 24px;
-      background-color: #161B22; /* Dark background */
-      color: #C9D1D9; /* Light text color */
-      font-size: 18px; /* Increase font size */
-    }
   </style>
 </head>
 <body>
-  <input type="text" id="url-input" placeholder="Enter markdown URL">
   <div id="markdown-content" class="markdown-body"></div>
 
   <script>
@@ -78,14 +66,6 @@
         }
       }
 
-      const urlInput = document.querySelector('#url-input');
-      urlInput.addEventListener('input', (event) => {
-        const newUrl = event.target.value;
-        if (newUrl) {
-          fetchMarkdown(newUrl);
-        }
-      });
-
       // URL loading logic (supports both ?url= and appended URL)
       const loadUrl = () => {
         // 1. Detect appended URL (no Cloudflare rewrite needed)
@@ -93,7 +73,6 @@
 
         if (raw.startsWith("https://") || raw.startsWith("http://")) {
           fetchMarkdown(raw);
-          urlInput.value = raw;
           return;
         }
 
@@ -102,7 +81,6 @@
         const markdownUrl = params.get("url");
         if (markdownUrl) {
           fetchMarkdown(markdownUrl);
-          urlInput.value = markdownUrl;
           return;
         }
 
